@@ -88,14 +88,14 @@ export default class ProductManager {
 
             const product = {
                 id: productFound.id,
-                title: title || productFound.title,
-                description: description || productFound.description,
-                code: code || productFound.code,
-                price: price || productFound.price,
+                title: title ?? productFound.title,
+                description: description ?? productFound.description,
+                code: code ?? productFound.code,
+                price: price ?? productFound.price,
                 status: status ? convertToBoolean(status) : productFound.status,
                 stock: stock ? Number(stock) : productFound.stock,
-                category: category || productFound.category,
-                thumbnail: newThumbnail || productFound.thumbnail,
+                category: category ?? productFound.category,
+                thumbnail: newThumbnail ?? productFound.thumbnail,
             };
 
             const index = this.#products.findIndex((item) => item.id === Number(id));
