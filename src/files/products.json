@@ -8,7 +8,7 @@
 		"status": true,
 		"stock": 100,
 		"category": "Category A",
-		"thumbnail": "Perro1.jpg"
+		"thumbnail": "file_5859_07112024_144104.jpg"
 	},
 	{
 		"id": 2,
@@ -19,7 +19,7 @@
 		"status": false,
 		"stock": 50,
 		"category": "Category B",
-		"thumbnail": "Perro2.jpg"
+		"thumbnail": "file_5162_07112024_144058.jpg"
 	},
 	{
 		"id": 3,
@@ -30,7 +30,7 @@
 		"status": true,
 		"stock": 90,
 		"category": "Category C",
-		"thumbnail": "Perro3.jpg"
+		"thumbnail": "file_9491_07112024_144008.jpg"
 	},
 	{
 		"id": 4,
@@ -41,6 +41,6 @@
 		"status": true,
 		"stock": 1,
 		"category": "Category ZXZ",
-		"thumbnail": "file_5744_07112024_141359.jpg"
+		"thumbnail": "file_5848_07112024_143937.jpg"
 	}
 ]
