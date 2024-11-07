@@ -4,36 +4,32 @@
 		"title": "Producto A",
 		"description": "Descripción del producto A",
 		"code": "PROD001",
-		"price": 100.00,
+		"price": 100,
 		"status": true,
 		"stock": 100,
 		"category": "Category A",
-		"thumbnail": "file_9807_03112824_230420.jpg"
-
+		"thumbnail": "Perro1.jpg"
 	},
-
 	{
 		"id": 2,
-        "title": "Producto B",
-        "description": "Descripción del producto B",
-        "code": "PROD002",
-        "price": 200.00,
-        "status": false,
-        "stock": 50,
-        "category": "Category B",
-        "thumbnail": "file_9807_03112824_230420.jpg"
+		"title": "Producto B",
+		"description": "Descripción del producto B",
+		"code": "PROD002",
+		"price": 200,
+		"status": false,
+		"stock": 50,
+		"category": "Category B",
+		"thumbnail": "Perro2.jpg"
 	},
 	{
 		"id": 3,
-        "title": "Producto C",
-        "description": "Descripción del producto C",
-        "code": "PROD003",
-        "price": 300.00,
-        "status": true,
-        "stock": 200,
-        "category": "Category C",
-        "thumbnail": "file_9807_03112824_230420.jpg"
+		"title": "Producto C",
+		"description": "Descripción del producto C",
+		"code": "PROD003",
+		"price": "50",
+		"status": true,
+		"stock": 1,
+		"category": "Category C",
+		"thumbnail": "Perro3.jpg"
 	}
-
 ]
-

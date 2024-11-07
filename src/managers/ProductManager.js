@@ -47,25 +47,25 @@ export default class ProductManager {
     // Inserta un producto
     async insertOne(data, file) {
         try {
-            const { title, status, stock } = data;
+            const { title, description, code, price, status, stock, category } = data;
 
-            if (!title || !status || !stock ) {
+            if (!title || !description || !code || !price ||!status ||!stock ||!category) {
                 throw new ErrorManager("Faltan datos obligatorios", 400);
             }
 
-            if (!file?.filename) {
+           if (!file?.filename) {
                 throw new ErrorManager("Falta el archivo de la imagen", 400);
             }
 
             const product = {
                 id: generateId(await this.getAll()),
-                title,
-                description,
-                code,
-                price,
+                title: title,
+                description: description,
+                code: code,
+                price: Number(price),
                 status: convertToBoolean(status)?? true,
                 stock: Number(stock),
-                category,
+                category: category,
                 thumbnail: file?.filename,
             };
 
@@ -82,15 +82,19 @@ export default class ProductManager {
     // Actualiza un producto en específico
     async updateOneById(id, data, file) {
         try {
-            const { title, status, stock } = data;
+            const { title, description, code, price, status, stock, category } = data;
             const productFound = await this.#findOneById(id);
             const newThumbnail = file?.filename;
 
             const product = {
                 id: productFound.id,
                 title: title || productFound.title,
+                description: description || productFound.description,
+                code: code || productFound.code,
+                price: price || productFound.price,
                 status: status ? convertToBoolean(status) : productFound.status,
                 stock: stock ? Number(stock) : productFound.stock,
+                category: category || productFound.category,
                 thumbnail: newThumbnail || productFound.thumbnail,
             };
 

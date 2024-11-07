@@ -11,7 +11,7 @@ export default class CartManager {
         this.#jsonFilename = "carts.json";
     }
 
-    // Busca un receta por su ID
+    // Busca un Cart por su ID
     async #findOneById(id) {
         this.#carts = await this.getAll();
         const cartFound = this.#carts.find((item) => item.id === Number(id));
@@ -23,7 +23,7 @@ export default class CartManager {
         return cartFound;
     }
 
-    // Obtiene una lista de recetas
+    // Obtiene una lista de Carts
     async getAll() {
         try {
             this.#carts = await readJsonFile(paths.files, this.#jsonFilename);
@@ -33,7 +33,7 @@ export default class CartManager {
         }
     }
 
-    // Obtiene un receta específica por su ID
+    // Obtiene un Cart específica por su ID
     async getOneById(id) {
         try {
             const cartFound = await this.#findOneById(id);
@@ -43,7 +43,7 @@ export default class CartManager {
         }
     }
 
-    // Inserta un receta
+    // Inserta un Cart
     async insertOne(data) {
         try {
             const products = data?.products?.map((item) => {
@@ -64,7 +64,7 @@ export default class CartManager {
         }
     }
 
-    // Agrega un producte a una receta o incrementa la cantidad de un producte existente
+    // Agrega un producto a un Cart o incrementa la cantidad de un producto existente
     addOneProduct = async (id, productId) => {
         try {
             const cartFound = await this.#findOneById(id);

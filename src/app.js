@@ -1,7 +1,7 @@
 import express from "express";
 
 // Importación de enrutadores
-import routerRecipes from "./routes/cart.router.js";
+import routerCarts from "./routes/cart.router.js";
 import routerProducts from "./routes/product.router.js";
 
 // Se crea una instancia de la aplicación Express

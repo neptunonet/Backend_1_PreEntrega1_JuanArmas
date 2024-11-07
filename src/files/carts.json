@@ -1,14 +1,14 @@
 [
 	{
 		"id": 1,
-		"ingredients": [
+		"products": [
 			{
-				"ingredient": 1,
+				"product": 1,
 				"quantity": 1
 			},
 			{
-				"ingredient": 2,
-				"quantity": 3
+				"product": 2,
+				"quantity": 1
 			}
 		]
 	}
