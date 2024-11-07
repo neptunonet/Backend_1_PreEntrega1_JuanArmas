@@ -26,7 +26,7 @@ router.get("/:id", async (req, res) => {
 });
 
 // Ruta para crear un producto, permite la subida de imágenes
-router.post("/", uploader.single("file"), async (req, res) => {
+router.post("/", uploader.single("thumbnail"), async (req, res) => {
     try {
         const product = await productManager.insertOne(req.body, req.file);
         res.status(201).json({ status: "success", payload: product });

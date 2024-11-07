@@ -28,8 +28,19 @@
 		"code": "PROD003",
 		"price": "50",
 		"status": true,
-		"stock": 1,
+		"stock": 90,
 		"category": "Category C",
 		"thumbnail": "Perro3.jpg"
+	},
+	{
+		"id": 4,
+		"title": "Producto 4",
+		"description": "Descripción del producto 4",
+		"code": "PROD004",
+		"price": 50,
+		"status": true,
+		"stock": 1,
+		"category": "Category ZXZ",
+		"thumbnail": "file_5744_07112024_141359.jpg"
 	}
 ]
